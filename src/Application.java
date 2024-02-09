@@ -1,6 +1,6 @@
 public class Application {
     public void start() {
-        Animal animal1 = new Animal("Horsey the horising horse", 99);
+        Animal animal1 = new Animal("Horsey the horsing horse", 99);
 
         System.out.println(animal1);
     }

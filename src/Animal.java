@@ -10,13 +10,14 @@ public class Animal {
 
     public  Animal(){
     }
-    public Animal(String name, String type, String description, int age, boolean star, boolean winner) {
-        this.name = name;
-        this.type = type;
-        this.description = description;
-        this.age = age;
-        this.star = star;
-        this.winner = winner;
+    public Animal(Animal other) {
+        this.id = other.id;
+        this.name = other.name;
+        this.type = other.type;
+        this.description = other.description;
+        this.age = other.age;
+        this.star = other.star;
+        this.winner = other.winner;
     }
     public Animal(String name, String type, String description, int age) {
         this.name = name;
