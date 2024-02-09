@@ -1,4 +1,6 @@
-public class Animal {
+package base.animal.data;
+
+public class Animal implements Comparable<Animal>{
 
     int id;
     String name;
@@ -103,5 +105,12 @@ public class Animal {
                 ", type='" + type + '\'' +
                 ", description='" + description + '\'' +
                 ", age=" + age ;
+    }
+
+    @Override
+    public int compareTo( Animal o) {
+        return this.name.compareTo(o.name);
+        //return Integer.compare(this.age, o.age);
+
     }
 }
